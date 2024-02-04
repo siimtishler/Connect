@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Connect Four</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div id="game">
+            <div id="upper-box">
+                <div class="versus-wrapper">
+                    <button class="settings player focused">AI</button>
+                    <button class="settings player">Player</button>
+                </div>
+                
+                <svg id="clock" viewBox="-10 0 40 25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"/>
+                </svg>
+                <div class="time-wrapper">
+                    
+                    <button class="settings time focused">Unlimited</button>
+                    <button class="settings time" time="5">5</button>
+                    <button class="settings time" time="10">10</button>
+                    <button class="settings time" time="15">15</button>
+                </div>
+            </div>
+
+            <div id="timer-box">tere</div>
+
+            
+            <div id="game-box">
+                <div id="connectfour"></div>
+            </div>
+
+            <div id="lower-box">
+                <button class="settings start">Start</button>
+            </div>
+        </div>
+
+        
+        <script type="module" src="index.js" async defer></script>
+        <script type="module" src ="connectfour.js" ></script>
+
+    </body>
+</html>
