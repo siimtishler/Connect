@@ -67,13 +67,15 @@ export class ConnectFour{
             // Make players move, check for win/draw, change player
             if(this.makeMovePlayer(col) == false) return
             this.evaluateGameState()
+            if(this.gameOver) return
             this.player = this.changePlayer(this.player)
             
             // Get AI move, make the move, check for win/draw, change player
             if(this.otherPlayer == 'AI'){
-                let moveAI = this.getMoveAI(100)
-                if(this.makeMovePlayer(moveAI) == false) return
+                let AI_made_move = this.getMoveAI(10)
+                if(this.makeMovePlayer(AI_made_move) == false) return
                 this.evaluateGameState()
+                if(this.gameOver) return
                 this.player = this.changePlayer(this.player);
             }
         }
