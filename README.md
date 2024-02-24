@@ -12,7 +12,7 @@ AI opponent uses the Monte Carlo heuristic search algorithm to make decisions
 
 ## TODO:
 * Add AI difficulty selection for user - Change N parameter of function `getMoveAI(N)` with a slider/buttons/selection
-* Implement timer settings (inactive buttons unlimited,5,10,15)
+* Implement timer settings (inactive buttons unlimited, 5, 10, 15)
 * Add hints against AI
 * Add AI evaluated win percentages for both sides
 * Add different sized boards selection
